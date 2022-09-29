@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main screen</title>
+</head>
+<body>
+    <div>
+        <!-- image tag with height 300 and width 400 -->
+        <img src="Static/logo1-copy.png" alt="creatoverse" width="500" height="400">
+    </div>
+    <link rel="stylesheet" href="form.css">
+    <form action="#" class="form" id="forms" onsubmit="event.preventDefault()">
+      
+    
+        <div class="progressbar" >
+          <div class="progress" id="progress"></div>
+          
+          <div
+            class="progress-step progress-step-active"
+            data-title="Details"
+          ></div>
+          
+          <div class="progress-step" data-title="Link"></div>
+          <div class="progress-step" data-title="Abstract"></div>
+        </div>
+        <div class="step-forms step-forms-active">
+          <div class="group-inputs">
+            <label for="Name">Name</label>
+            <input type="text" name="Name" id="Name" required >
+          </div>
+          <div class="group-inputs">
+            <label for="Email">Email</label>
+            <input type="text" name="Email" id="Email"  required>
+          </div>
+          <div class="group-inputs">
+            <label for="Registration_number">Registration Number</label>
+            <input type="text" name="Registration_number" id="Registration_number"  required/>
+          </div>
+          <div class="">
+            <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+          </div>
+        </div>
+        <div class="step-forms">
+            <div class="group-inputs">
+              <label for="ID">Link for submission</label>
+              <input type="text" name="ID" id="ID" required>
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev">Previous</a>
+                <a href="#" class="btn btn-next">Next</a>
+            </div>
+        </div>
+        <div class="step-forms">
+            <div class="group-inputs">
+              <label for="Abstract">Abstract</label>
+              <input type="text" style=" min-width:250px; max-width:100%;min-height:100px;height:100%;width:100%;" name="Abstract" id="Abstract" required/>
+            </div>
+          <div class="btns-group">
+            <a href="#" class="btn btn-prev">Previous</a>
+            <input type="submit" value="Submit" id="submit-form" class="btn" >
+          </div>
+        </div>
+      </form>
+
+
+      <div style="padding-top: 5%;color: white;">
+        <h1>Our Sponsors</h1>
+      </div>
+      <div class="footer" style="padding-top: 1%;">
+        
+        <!-- create two div and display them inline as image -->
+        <div style="display: inline-block; padding-right: 32rem;">
+            <img src="Static/Skill-Vertex-Logo 1.png" alt="creatoverse" width="200" height="150">
+        </div>
+        <div style="display: inline-block; padding-right: 30%;">
+            <img src="Static/yoode inverted 1.png" alt="creatoverse" width="200" height="150">
+        </div>
+    </div>
+        <script src="form.js"></script>
+</body>
+</html>
